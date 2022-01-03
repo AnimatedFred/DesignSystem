@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Button from "./components/button";
 
 function App() {
   return (
@@ -8,6 +9,13 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
+
+          <Button btnColor="blue" type="outline" size="small">
+        Outline Button
+      </Button>
+      <Button>
+        default
+      </Button>
         </p>
         <a
           className="App-link"
