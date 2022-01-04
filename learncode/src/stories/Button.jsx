@@ -6,7 +6,9 @@ import './button.css';
  * Primary UI component for user interaction
  */
 export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
-  const mode = primary ? 'button--primary' : 'button--secondary';
+  const mode = primary ? 'button--default' : 'button--outlined';
+
+  
   return (
     <button
       type="button"

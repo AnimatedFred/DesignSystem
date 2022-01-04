@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import { Button } from './stories/Button';
+
+
 
 
 function App() {
@@ -20,6 +23,9 @@ function App() {
         >
           Learn React
         </a>
+
+        <Button primary size="small" label="Log out" />
+
       </header>
     </div>
   );

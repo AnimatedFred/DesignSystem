@@ -7,15 +7,20 @@
   display: inline-block;
   line-height: 1;
 }
-.button--primary {
+.button--default {
   color: #022215;
   background-color: #81DBA2;
 }
-.button--secondary {
+.button--outlined {
   color: #333;
   background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
 }
+.button--disabled {
+  color: #181818;
+  background-color: #747474;
+}
+
 .button--small {
   font-size: 12px;
   padding: 10px 16px;
@@ -28,4 +33,9 @@
   font-size: 16px;
   padding: 24px 20px;
   border-radius: 12px;
+}
+
+.button--rounded {
+  font-size: 16px;
+  border-radius: 100px;
 }
