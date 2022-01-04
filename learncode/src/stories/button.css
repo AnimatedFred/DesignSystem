@@ -10,7 +10,14 @@
 .button--default {
   color: #022215;
   background-color: #81DBA2;
+  transition-duration: 0.4s;
 }
+
+.button--default:hover {
+  background-color: #BBF3CC;
+  color: #022215;
+}
+
 .button--outlined {
   color: #333;
   background-color: transparent;

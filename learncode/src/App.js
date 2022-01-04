@@ -25,6 +25,7 @@ function App() {
         </a>
 
         <Button primary size="small" label="Log out" />
+        <input type="text" id="fname" name="fname" />
 
       </header>
     </div>

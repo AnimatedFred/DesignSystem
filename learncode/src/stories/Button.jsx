@@ -8,6 +8,7 @@ import './button.css';
 export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
   const mode = primary ? 'button--default' : 'button--outlined';
 
+
   
   return (
     <button
@@ -34,6 +35,7 @@ Button.propTypes = {
    * How large should the button be?
    */
   size: PropTypes.oneOf(['small', 'medium', 'large']),
+
   /**
    * Button contents
    */
