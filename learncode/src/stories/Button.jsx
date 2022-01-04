@@ -5,7 +5,7 @@ import './button.css';
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
+export const Button = ({ primary, backgroundColor, size,  label, ...props }) => {
   const mode = primary ? 'button--default' : 'button--outlined';
 
 
@@ -36,6 +36,7 @@ Button.propTypes = {
    */
   size: PropTypes.oneOf(['small', 'medium', 'large']),
 
+  disabled: PropTypes.bool,
   /**
    * Button contents
    */

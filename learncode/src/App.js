@@ -24,8 +24,8 @@ function App() {
           Learn React
         </a>
 
-        <Button primary size="small" label="Log out" />
-        <input type="text" id="fname" name="fname" />
+        <Button primary size="small" disabled={true} label="Log out" />
+        
 
       </header>
     </div>

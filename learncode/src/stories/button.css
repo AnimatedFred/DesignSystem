@@ -7,6 +7,11 @@
   display: inline-block;
   line-height: 1;
 }
+
+
+/**
+   * Default
+   */
 .button--default {
   color: #022215;
   background-color: #81DBA2;
@@ -17,16 +22,30 @@
   background-color: #BBF3CC;
   color: #022215;
 }
+.button--default:disabled {
+  background-color: #1d1d1d;
+  color: #555555;
+}
+
+/**
+   * Outlined 
+   */
+
 
 .button--outlined {
   color: #333;
   background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
 }
-.button--disabled {
-  color: #181818;
-  background-color: #747474;
+
+.button--outlined:hover {
+  background-color: #BBF3CC;
+  color: #022215;
 }
+
+/**
+   * Size properties
+   */
 
 .button--small {
   font-size: 12px;
@@ -40,9 +59,4 @@
   font-size: 16px;
   padding: 24px 20px;
   border-radius: 12px;
-}
-
-.button--rounded {
-  font-size: 16px;
-  border-radius: 100px;
 }
