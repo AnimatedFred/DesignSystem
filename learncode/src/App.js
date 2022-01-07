@@ -24,7 +24,7 @@ function App() {
           Learn React
         </a>
 
-        <Button primary size="small" disabled={true} label="Log out" />
+        <Button primary size="small" label="Log out" />
         
 
       </header>
