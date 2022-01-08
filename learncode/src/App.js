@@ -5,12 +5,24 @@ import { Header } from './stories/Header';
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
 
-export const ResponsiveWrapper = styled.div`
+export const pageWrapper = styled.div`
+display: flex;
+background-color: #000;
+flex: 1;
+flex-direction: column;
+justify-content: stretched;
+align-items: stretched;
+width: 100%;
+@media (min-width: 767px) {
+  flex-direction: row;
+}
+`;
+
+export const ResponsiveColumn = styled.div`
   display: flex;
   flex: 1;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: stretched;
-  background-color: #000;
   align-items: stretched;
   width: 100%;
   @media (min-width: 767px) {
@@ -18,58 +30,58 @@ export const ResponsiveWrapper = styled.div`
   }
 `;
 
+export const StyledProfile = styled.img`
+  
+  background-color: var(--accent);
+  border-radius: 16px;
+  width: 100px;
+  @media (min-width: 900px) {
+    width: 200px;
+  }
+  @media (min-width: 1000px) {
+    width: 200px;
+  }
+  transition: width 0.5s;
+`;
 
 
 
 function App() {
   return (
+    <pageWrapper>
+<ResponsiveColumn flex={1} style={{ padding: 24 }} test>
+      <s.Container   flex={1.5}
+            style={{
+              backgroundColor: "#fff",
+              borderColor:"#000",
+              padding: 24,
+              borderRadius: 0,
+            }}>
+  
 
-    <ResponsiveWrapper>
+</s.Container>
+<s.Container   flex={4}
+          
+          style={{
+            backgroundColor: "#0B0B0C",
+            padding: 24,
+            borderRadius: 0,
+          }}>
+sssxkmsxmxkxkxs
+
+</s.Container>
+
 
 
           
-          <s.Container flex={2} style={{
-              backgroundColor: "#0B0B0C",
-              padding: 24,
-              borderRadius: 0,
-              
-              
-            
-              boxShadow: "5px 0px 11px 4px rgba(9, 9, 10, 0.3)",
-            }}>
-              <Header
-  onCreateAccount={() => {}}
-  onLogin={function noRefCheck() {}}
-  onLogout={function noRefCheck() {}}
-  user={{}}
-/>
-              <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        
-    
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <s.SpacerSmall />
-
-        <Button primary size="small" label="Log out" />
-        
-       
-      </header>
-    </div>
-    </s.Container>
-      </ResponsiveWrapper>
+          </ResponsiveColumn>
 
 
+      
+</pageWrapper>
+      
+      
+  
 
   );
 }
